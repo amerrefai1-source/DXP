@@ -60,12 +60,14 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
             <main>
               <div id="content">
                 {route && (
+                  <div>
                   <AppPlaceholder
                     page={page}
                     componentMap={componentMap}
                     name="headless-main"
                     rendering={route}
                   />
+                  </div>
                 )}
               </div>
             </main>
